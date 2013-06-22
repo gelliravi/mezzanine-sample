@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+
+<h2>Institutions</h2>
+
+<ul>
+{% for institute in institutes %}
+    <li><a href="/institute/{{ institute.id }}/details/">{{institute.name}}</a></li>
+    <!--<li><a href="/admin/institute/institution/{{ institute.id }}/">{{ institute.name }}</a></li>-->
+{% endfor %}
+</ul>
+
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+
+<h2>Institution Details</h2>
+
+<ul>
+    <li><b>Name:</b> {{institutes.name}}</li>
+    <li><b>Address:</b> {{institutes.address}}</li>
+    <li><b>City:</b> {{institutes.city}}</li> 
+    <li><b>State:</b> {{institutes.state}}</li>
+    <li><b>Website:</b> {{institutes.website}}</li>
+    <li><b>Phone No:</b> {{institutes.phone_number}}</li> 
+    <li><b>Email:</b> {{institutes.email}}</li>
+    <li><b>Facilities:</b> 
+       <ul>
+       {% for facility in institutes.facilities.all %}
+       <li>{{ facility.name }}</li>
+       {% endfor %}
+       </ul>
+    </li>
+    <li><b>Established in:</b> {{institutes.year_of_establishment}}</li> 
+    <li><b>Institution Type:</b> {{institutes.type_of_institution}}</li> 
+    <li><b>University:</b> {{institutes.university}}</li> 
+    <li><b>Courses:</b> {{institutes.courses}}</li> 
+    <li><b>AICTE Approved?:</b> {{institutes.aicte_approved}}</li>
+    <li><b>Entrance Test:</b> 
+       <ul>
+       {% for test in institutes.entrance_test.all %}
+       <li>{{ test.test_name }}</li>
+       {% endfor %}
+       </ul>
+    </li>
+    <li><b>Academic Session Start Date:</b> {{institutes.academic_section_start_date}}</li> 
+    <li><b>Eligibility:</b> {{institutes.minimum_eligibility}}</li>
+    <li><b>Total Seats:</b> {{institutes.total_seats}}</li> 
+    <li><b>Other Courses:</b> {{institutes.other_courses}}</li> 
+
+</ul>
+
+
+
+
+{% endblock %}
