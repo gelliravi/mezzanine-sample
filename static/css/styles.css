@@ -3,7 +3,8 @@ body{
 }
 
 .navbar{
-  height: 250px;
+  height: 200px;
+  margin-bottom: 0px;
 }
 
 .navbar-inner{
@@ -45,7 +46,7 @@ body{
 }
 
 .nav-search{
-  margin: 10px auto;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -77,15 +78,12 @@ footer{
 
 
 .row-new {
-  /*margin-left: -36px;
-  margin-right: -35px;*/
   background-color: #D6D6C2;
   padding: 40px;
   *zoom: 1;
 }
 
 .leftblock{
-  /*float: left;*/
   display: inline-block;
   border-right:  solid ;
   width: 30%;
@@ -93,7 +91,6 @@ footer{
 }
 
 .rightblock{
-  /*float: right;*/
   display: inline-block;
   border-left: solid;
   width: 30%;
@@ -111,6 +108,19 @@ footer{
   margin-right: 20px; 
 }
 
-.foot-link{
+.foot-link{ 
   text-align:center;
+}
+
+.navbar-bottom{
+  background-color: #D6D6C2;
+  min-height:50px;
+  margin-top: -20px;
+  padding: 10px;
+} 
+
+.container-new {
+  margin-right: 100%;
+  margin-left: 100%;
+  *zoom: 1;
 }
