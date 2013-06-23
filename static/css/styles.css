@@ -76,23 +76,18 @@ footer{
   padding: 30px 40px;
 }
 
-
-.row-new {
-  background-color: #D6D6C2;
-  padding: 40px;
-  *zoom: 1;
-}
-
 .leftblock{
   display: inline-block;
-  border-right:  solid ;
+  border-right-style:solid;
+  border-right-width:1px;
   width: 30%;
   padding: 10px;
 }
 
 .rightblock{
   display: inline-block;
-  border-left: solid;
+  border-left-style:solid;
+  border-left-width:1px;
   width: 30%;
   padding: 10px;
 }
@@ -116,11 +111,23 @@ footer{
   background-color: #D6D6C2;
   min-height:50px;
   margin-top: -20px;
-  padding: 10px;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  padding-left: 40px;
 } 
 
 .container-new {
   margin-right: 100%;
   margin-left: 100%;
   *zoom: 1;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;  
+
 }

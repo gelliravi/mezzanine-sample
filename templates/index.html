@@ -8,29 +8,22 @@
 <li class="active">{% trans "Home" %}</li>
 {% endblock %}
 
-{% block container %}
-<div class="row-new">
-{% blocktrans %}
 
-<h2>Congratulations!</h2>
-<p>
-    Welcome to your new Mezzanine powered website.
-    Here are some quick links to get you started:
-</p>
-<ul>
-    <li><a href="/admin/">Log in to the admin interface</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
-</ul>
+{% block navbottom %}
+<div class="navbar-bottom h200 p1">
+<div class="hplusplus">
+	<b>BENIFITS OF GYAANZONE</b><br><br>
+	AMET NEC! HOW ARE YOU GOOD.
 </div>
+<br><br>
+THIS IS A TEST TEXT. THIS HAS TO BE EDITED WHEN UPDATING.<br>
+ALL GOES WELL TILL HERE. WHEN UPDATED, THE ORIGINAL TEXT IS DISPLAYED HERE.<br><br>
 
-<br><br><br>
+<input class="btn" type="button" value="MORE"></input>
 
-<div class="row">
+</div>
+{% endblock %}
+{% block container %}
 
 <div class="leftblock">
 	<h1>THE ZONE</h1>
@@ -43,10 +36,15 @@
 
 
 </div>
-<div class="middleblock middle">
-<h1>3978</h1>
+<div class="middleblock">
+	<h1>3978</h1>
+    INSTITUTES TO CHOSE FROM
+
+    <h1>1580</h1>
+    COURSES TO CHOSE FROM
+
 </div>
-<div class="rightblock right">
+<div class="rightblock ">
 	<h1>GYAAN NEWS</h1>
 	<ul>
 		<li><a href="#">LATEST NEWS can be given as a link</a></li>
@@ -55,6 +53,11 @@
 		<li><a href="#">LATEST NEWS can be given as a link</a></li>
 	</ul>
 </div>
+
+<div class="quote">
+	"These are word said by someone regarding gyyanzone. Its wonderfull to work with gyaanzone. Looking forward to work with gyaanzone. mezzanine is a wonderful tool to use."
 </div>
-{% endblocktrans %}
+<div class="tac italic">
+	<b>NAME OF THE PERSON</b>,LOCATION,AGE
+</div>
 {% endblock %}
