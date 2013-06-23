@@ -1,61 +1,116 @@
 body{
-   padding: 0px;
+  padding: 0px;
 }
 
 .navbar{
-   height: 250px;
+  height: 250px;
 }
 
 .navbar-inner{
-   background-color: white;
-   background-image: none;
-   padding: 30px 40px;
+  background-color: white;
+  background-image: none;
+  padding: 30px 40px;
 }
 
 .nav-header{
-   width: 100%;
-   margin: 10px 0px;
+  width: 100%;
+  margin: 10px 0px;
 }
 
 .nav-header h1{
-   font-size: 36px;
-   font-weight: 250;
-   color: #444;
+  font-size: 36px;
+  font-weight: 250;
+  color: #444;
 }
 
 .nav-menu{
-   width: 100%;
-   font-size: 12px;
-   font-weight: bolder;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 .nav-menu .signup{
-   float: right;
-   width: auto;
+  float: right;
+  width: auto;
 }
 
 .nav-menu .signup a{
-   color: #444;
+  color: #444;
 }
 
 .nav-menu ul{
-   float: left;
-   margin: 0px 0px 10px 0px;
-   text-transform: uppercase;
+  float: left;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
 }
 
 .nav-search{
-   margin: 10px auto;
-   text-align: center;
+  margin: 10px auto;
+  text-align: center;
+}
 
+.navbar-search{
+  float: none;
 }
 
 .nav-tabs .open .dropdown-toggle, .nav-pills .open .dropdown-toggle, .nav > li.dropdown.open.active > a:hover, .nav > li.dropdown.open.active > a:focus {
-    color: white;
-    background-color: #424242;
-    border-color: #424242;
+  color: white;
+  background-color: #424242;
+  border-color: #424242;
 }
 
 footer{
   display: block;
+}
+
+.navbar-search .search-query {
+  width:700px; 
+  border-radius:3px;
+  margin:10px auto !important;
+ }
+
+.navbar-inner1{
+  background-color: none;
+  background-image: none;
+  padding: 30px 40px;
+}
+
+
+.row-new {
+  /*margin-left: -36px;
+  margin-right: -35px;*/
+  background-color: #D6D6C2;
+  padding: 40px;
+  *zoom: 1;
+}
+
+.leftblock{
+  /*float: left;*/
+  display: inline-block;
+  border-right:  solid ;
+  width: 30%;
+  padding: 10px;
+}
+
+.rightblock{
+  /*float: right;*/
+  display: inline-block;
+  border-left: solid;
+  width: 30%;
+  padding: 10px;
+}
+
+.middleblock{
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+}
+
+.foot-text{
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
+.foot-link{
+  text-align:center;
 }

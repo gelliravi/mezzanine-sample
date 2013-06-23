@@ -8,8 +8,10 @@
 <li class="active">{% trans "Home" %}</li>
 {% endblock %}
 
-{% block main %}
+{% block container %}
+<div class="row-new">
 {% blocktrans %}
+
 <h2>Congratulations!</h2>
 <p>
     Welcome to your new Mezzanine powered website.
@@ -24,5 +26,36 @@
     <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
     <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
 </ul>
+</div>
+</div>
+
+<br><br><br>
+
+<div class="row">
+
+<div class="leftblock">
+	<h1>THE ZONE</h1>
+	<ul>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+	</ul>
+
+
+</div>
+<div class="middleblock middle">
+<h1>3978</h1>
+</div>
+<div class="rightblock right">
+	<h1>GYAAN NEWS</h1>
+	<ul>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+		<li><a href="#">LATEST NEWS can be given as a link</a></li>
+	</ul>
+</div>
+</div>
 {% endblocktrans %}
 {% endblock %}
