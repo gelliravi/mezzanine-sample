@@ -240,7 +240,7 @@ INSTALLED_APPS = (
     #"mezzanine.mobile",   
     "datamaster",
     "institute",
-    "registration"
+    "zone",
 )
 
 # List of processors used by RequestContext to populate the context.
