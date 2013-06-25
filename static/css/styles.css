@@ -131,3 +131,64 @@ footer{
   margin-left: 50px;  
 
 }
+
+.span60{
+  width:60%;
+  
+}
+
+.span30{
+  width: 30%;
+}
+
+.span40{
+  width: 40%;
+}
+.span75{
+  width: 75%;
+}
+
+.span20{
+  width: 20%;
+}
+.span10{
+  width: 10%;
+}
+
+.span80{
+  width: 80%;
+}
+
+.span15{
+  width: 15%;
+}
+.span15{
+  width: 15%;
+}
+.span50{
+  width: 50%;
+}
+}
+.span55{
+  width: 55%;
+}
+.backdefault{
+  background-color:  #D6D6C2;
+}
+
+.college-box{
+  list-style-type: none;
+  border: 1px solid;
+}
+.lpad11{
+  padding-left: 11px;
+}
+
+.row-college {
+    margin-left: -32px;
+    padding: 10px;
+}
+.ul-college{
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }

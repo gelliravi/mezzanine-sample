@@ -240,7 +240,10 @@ INSTALLED_APPS = (
     #"mezzanine.mobile",   
     "datamaster",
     "institute",
+    "registration",
     "zone",
+    "advanced",
+    "south"
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -356,3 +359,4 @@ else:
 
 SITE_TITLE = 'GYAANZONE'
 SITE_TAGLINE = ''
+FILE_UPLOAD_PERMISSIONS = 0644

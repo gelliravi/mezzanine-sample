@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block navbottom %}
+<div class="navbar-bottom">
+  <div class="btn-group bpad40 rpad20 lpad80">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    BOARD
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <!-- dropdown menu links -->
+  </ul>
+  </div>
+  <div class="btn-group bpad40 rpad20">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      STATE
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+    </ul>
+  </div>
+  <div class="btn-group bpad40 rpad20">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      LOCATION
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+    </ul>
+  </div>
+  <div class="btn-group bpad40 rpad20 ">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      PRICE RANGE
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+    </ul>
+  </div>
+  <div class="btn-group bpad40 rpad20">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+      FACILITIES
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+    </ul>
+  </div>
+  <div class="btn-group bpad40">
+    <input type="submit" class="btn" value="{% trans "Go" %}">
+  </div>
+</div>
+
+
+
+{% endblock %}
+{% block container %}
+<div class="row">
+  <div class="span80">
+    <a href="/">Home</a> > SEARCH<br>
+    <hr>
+    ALPHABETICAL 2,000 RESULTS (0.27 SECONDS)
+    <ul class="ul-college">
+      <li class="college-box pad10 h200">  
+        <div class="row">
+          <div class="span15 h200 break-word">
+            
+            <img src="{{MEDIA_URL}}/uploads/institutes/images.jpeg" alt="institute" ><br><br>
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px"><br><br>
+            <div class="tpad10 tac">
+              <a href="#">VIEW GALLERY</a>
+            </div>
+          </div>
+          <div class="span50 h200 break-word">
+            <b>AMITY GLOBAL BUISNESS SCHOOL</b><br>
+            MUMBAI, MAHARASHTRA<br>
+            Establishment:2003 Amity Global Buisness School is a part of the Amity Education Group which has over two decades of experiance in the field of education .... <a href="#">READ MORE</a><br><br>
+            <div class="row">
+              <div class="span40 break-word">
+                Amity Global Buisness School, Infinity Towers, $th Floor, Opp Goregaon Sports Complex, Malad(W),Mind Space, Mumbai.
+              </div>
+              <div class="span40 break-word">
+                xxx-xxx-xxxx<br>
+                info@aaaaa.com<br>
+                http://asdf.in
+              </div>
+            </div>
+          </div>
+        
+          <div class="span15 h200 break-word lborder hpad15">
+          <h2><span class="WebRupee">Rs.</span>32000</h2>
+          Courses Starting From
+          </div> 
+        </div>
+      </li> <br><br>
+    </ul>
+
+    <ul class="ul-college">
+      <li class="college-box pad10 h200">  
+        <div class="row">
+          <div class="span15 h200 break-word">
+            
+            <img src="{{MEDIA_URL}}/uploads/institutes/images.jpeg" alt="institute" ><br><br>
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px"><br><br>
+            <div class="tpad10 tac">
+              <a href="#">VIEW GALLERY</a>
+            </div>
+          </div>
+          <div class="span50 h200 break-word">
+            <b>AMITY GLOBAL BUISNESS SCHOOL</b><br>
+            MUMBAI, MAHARASHTRA<br>
+            Establishment:2003 Amity Global Buisness School is a part of the Amity Education Group which has over two decades of experiance in the field of education .... <a href="#">READ MORE</a><br><br>
+            <div class="row">
+              <div class="span40 break-word">
+                Amity Global Buisness School, Infinity Towers, $th Floor, Opp Goregaon Sports Complex, Malad(W),Mind Space, Mumbai.
+              </div>
+              <div class="span40 break-word">
+                xxx-xxx-xxxx<br>
+                info@aaaaa.com<br>
+                http://asdf.in
+              </div>
+            </div>
+          </div>
+        
+          <div class="span15 h200 break-word lborder hpad15">
+          <h2><span class="WebRupee">Rs.</span>32000</h2>
+          Courses Starting From
+          </div> 
+        </div>
+      </li> <br><br>
+    </ul>
+    <ul class="ul-college">
+      <li class="college-box pad10 h200">  
+        <div class="row">
+          <div class="span15 h200 break-word">
+            
+            <img src="{{MEDIA_URL}}/uploads/institutes/images.jpeg" alt="institute" ><br><br>
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px"><br><br>
+            <div class="tpad10 tac">
+              <a href="#">VIEW GALLERY</a>
+            </div>
+          </div>
+          <div class="span50 h200 break-word">
+            <b>AMITY GLOBAL BUISNESS SCHOOL</b><br>
+            MUMBAI, MAHARASHTRA<br>
+            Establishment:2003 Amity Global Buisness School is a part of the Amity Education Group which has over two decades of experiance in the field of education .... <a href="#">READ MORE</a><br><br>
+            <div class="row">
+              <div class="span40 break-word">
+                Amity Global Buisness School, Infinity Towers, $th Floor, Opp Goregaon Sports Complex, Malad(W),Mind Space, Mumbai.
+              </div>
+              <div class="span40 break-word">
+                xxx-xxx-xxxx<br>
+                info@aaaaa.com<br>
+                http://asdf.in
+              </div>
+            </div>
+          </div>
+        
+          <div class="span15 h200 break-word lborder hpad15">
+          <h2><span class="WebRupee">Rs.</span>32000</h2>
+          Courses Starting From
+          </div> 
+        </div>
+      </li> <br><br>
+    </ul>
+    <ul class="ul-college">
+      <li class="college-box pad10 h200">  
+        <div class="row">
+          <div class="span15 h200 break-word">
+            
+            <img src="{{MEDIA_URL}}/uploads/institutes/images.jpeg" alt="institute" ><br><br>
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px">
+            <img src="{{MEDIA_URL}}/uploads/institutes/clg.jpeg" alt="institute" width="31%" height="100px"><br><br>
+            <div class="tpad10 tac">
+              <a href="#">VIEW GALLERY</a>
+            </div>
+          </div>
+          <div class="span50 h200 break-word">
+            <b>AMITY GLOBAL BUISNESS SCHOOL</b><br>
+            MUMBAI, MAHARASHTRA<br>
+            Establishment:2003 Amity Global Buisness School is a part of the Amity Education Group which has over two decades of experiance in the field of education .... <a href="#">READ MORE</a><br><br>
+            <div class="row">
+              <div class="span40 break-word">
+                Amity Global Buisness School, Infinity Towers, $th Floor, Opp Goregaon Sports Complex, Malad(W),Mind Space, Mumbai.
+              </div>
+              <div class="span40 break-word">
+                xxx-xxx-xxxx<br>
+                info@aaaaa.com<br>
+                http://asdf.in
+              </div>
+            </div>
+          </div>
+        
+          <div class="span15 h200 break-word lborder hpad15">
+          <h2><span class="WebRupee">Rs.</span>32000</h2>
+          Courses Starting From
+          </div> 
+        </div>
+      </li> <br><br>
+    </ul>
+      
+  </div>
+  <div class="span15 ">
+    <div class="tpad40">
+    <b>FEATURED COLLEGES</b>
+  </div>
+    <div class="fullheight tpad40 lpad11">
+      <img src="{{MEDIA_URL}}/uploads/institutes/Search-wireframe_crop.jpg" alt="institute" >
+  </div>
+</div>
+{% endblock %}

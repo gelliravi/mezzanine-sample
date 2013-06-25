@@ -57,6 +57,7 @@ urlpatterns = patterns("",
     ("^registration/", include("registration.urls")),
     ("^institute/", include("institute.urls")),
     ("^zone/", include("zone.urls")),
+    ("^advanced/", include("advanced.urls")),
     # MEZZANINE'S URLS
     # ----------------
     # ADD YOUR OWN URLPATTERNS *ABOVE* THE LINE BELOW.

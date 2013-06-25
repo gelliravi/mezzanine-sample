@@ -10,9 +10,11 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 
+
 {% ifinstalled mezzanine.blog %}
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
+
 {% endifinstalled %}
 
 {% compress css %}
@@ -21,6 +23,7 @@
 <link rel="stylesheet" href="{% static "css/bootstrap-responsive.css" %}">
 <link rel="stylesheet" href="{% static "css/styles.css" %}">
 <link rel="stylesheet" href="{% static "css/components.css" %}">
+<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
 {% endif %}
@@ -50,6 +53,7 @@
   <div class="navbar-inner1">
     <div class="nav-header">
     {% if settings.SITE_TITLE %}<h1>{{ settings.SITE_TITLE }}</h1>{% endif %}
+    <!-- <div class="tar"><a href="/advanced">ADVANCED SEARCH</a></div> -->
     {% if settings.SITE_TAGLINE %}<p class="navbar-text">{{ settings.SITE_TAGLINE }}</p>{% endif %}
     </div>
     <div class="nav-menu">
@@ -61,6 +65,7 @@
   </div>
   <div class="nav-search">
     {% search_form  %}
+    
   </div>
 </div> <!-- navbar -->
 {% block navbottom %}{% endblock %}
@@ -75,7 +80,7 @@
             <hr>
         </div>
         <div class="foot-link">
-            <a href="#">GYAANZONE</a><span class="separator">|</span><a href="#">ALL RIGHTS RESERVED</a><span class="separator">|</span><a href="#">TERMS&CONDITIONS</a>
+            <a href="#">GYAANZONE</a><span class="separator">|</span><a href="#">ALL RIGHTS RESERVED</a><span class="separator">|</span><a href="#">TERMS&amp;CONDITIONS</a>
         </div>
     </div>
 </footer>
