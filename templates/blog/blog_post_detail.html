@@ -31,9 +31,10 @@
 {% block container %}
 <div class="container">
 <div class="row">
-    <h1 class="hpad30">{% block blog_post.title %}{{ blog_post.title }}{% endblock %}</h1>
+    
 
     <div class="span7 middle">
+        <h1>{% block blog_post.title %}{{ blog_post.title }}{% endblock %}</h1>
 
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
@@ -137,7 +138,7 @@
 {% endblock %}
 
 </div>
-<div class="span3 right">
+<div class="span3 lpad40 right">
     <div class="panel">
 {% block right_panel %}
 {% include "blog/includes/filter_panel.html" %}

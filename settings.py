@@ -77,7 +77,9 @@
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
-
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 8000
+EMAIL_USE_TLS = True
 
 ########################
 # MAIN DJANGO SETTINGS #
