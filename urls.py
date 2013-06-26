@@ -54,10 +54,11 @@ urlpatterns = patterns("",
 
     # url("^$", "mezzanine.blog.views.blog_post_list", name="home"),
 
-    ("^registration/", include("registration.urls")),
+    # ("^registration/", include("registration.urls")),
     ("^institute/", include("institute.urls")),
     ("^zone/", include("zone.urls")),
     ("^advanced/", include("advanced.urls")),
+    # ("^accounts/", include("accounts.urls")),
     # MEZZANINE'S URLS
     # ----------------
     # ADD YOUR OWN URLPATTERNS *ABOVE* THE LINE BELOW.

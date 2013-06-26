@@ -7,3 +7,8 @@ def zone(request):
     return render_to_response('zone/zone.html', 
     	{ },
         context_instance=RequestContext(request))
+
+def main(request):    
+    return render_to_response('zone/main.html', 
+    	{ },
+        context_instance=RequestContext(request))

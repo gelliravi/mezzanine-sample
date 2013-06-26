@@ -1,3 +1,14 @@
-from django.db import models
+# from django.db import models
+# from django.contrib.auth.models import User
+# from institute.models import Institution
 
-# Create your models here.
+# ACCOUNT_TYPE = [
+#     ('INSTITUTE_OWNER', 'INSTITUTE_OWNER'),
+#     ('STUDENT', 'STUDENT'),
+# ]
+
+# class UserProfile(models.Model):
+	
+# 	user = models.OneToOneField('User',max_length=100)
+# 	Account_type = models.CharField(max_length = 50, choices=ACCOUNT_TYPE, blank=True)
+# 	institution = models.ForeignKey(Institution, max_length=100)

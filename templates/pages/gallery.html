@@ -9,7 +9,17 @@
 <script src="{% static "mezzanine/js/gallery.js" %}"></script>
 {% endblock %}
 
-{% block main %}
+{% block navbottom %}
+<div class="navbar-bottom">
+	<!-- <div class="bpad40 ">   
+	    <a href="/">Home</a> <span class="divider">/</span>
+	    THE ZONE
+    </div> -->
+</div>
+
+{% endblock %}
+
+{% block container %}
 {{ block.super }}
 
 {% editable page.gallery.content %}

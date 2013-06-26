@@ -243,7 +243,8 @@ INSTALLED_APPS = (
     "registration",
     "zone",
     "advanced",
-    "south"
+    "south",
+    # "accounts",
 )
 
 # List of processors used by RequestContext to populate the context.

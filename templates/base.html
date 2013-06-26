@@ -10,11 +10,9 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 
-
 {% ifinstalled mezzanine.blog %}
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
-
 {% endifinstalled %}
 
 {% compress css %}
@@ -64,8 +62,7 @@
     </div>
   </div>
   <div class="nav-search">
-    {% search_form  %}
-    
+    {% search_form  %}  
   </div>
 </div> <!-- navbar -->
 {% block navbottom %}{% endblock %}
