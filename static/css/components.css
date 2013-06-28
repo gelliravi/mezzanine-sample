@@ -239,6 +239,9 @@ a.linkColour:hover { color: #8E312A; }
 .rpad20{
 	padding-right: 20px;
 }
+.rpad0{
+	padding-right: 0px;
+}
 
 .lpad80{
 	padding-left: 80px;
@@ -262,6 +265,8 @@ a.linkColour:hover { color: #8E312A; }
 .lborder{
 	border-left: 1px solid;
 }
+
+.rborder{border-right: 1px solid;}
 
 .h250 {	height: 250px; }
 .h150 {	height: 150px; }

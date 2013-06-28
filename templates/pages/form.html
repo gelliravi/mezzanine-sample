@@ -9,7 +9,13 @@ $(function() {$('.middle :input:visible:enabled:first').focus();});
 </script>
 {% endblock %}
 
-{% block main %}
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+
+{% endblock %}
+
+{% block container %}
 {{ block.super }}
 {% if request.GET.sent %}
     {% editable page.form.response %}

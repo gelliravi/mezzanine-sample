@@ -1,6 +1,11 @@
 {% extends "email/base.txt" %}
 
-{% block main %}{% if message %}
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+{%endblock%}
+
+{% block container %}{% if message %}
 {{ message }}
 
 {% endif %}{% for field, value in fields %}

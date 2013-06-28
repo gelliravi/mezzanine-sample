@@ -2,7 +2,13 @@
 
 {% load mezzanine_tags %}
 
-{% block main %}{{ block.super }}
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+
+{% endblock %}
+
+{% block container %}{{ block.super }}
 
 {% editable page.richtextpage.content %}
 {{ page.richtextpage.content|richtext_filter|safe }}

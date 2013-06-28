@@ -77,9 +77,9 @@
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 8000
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 8000
+# EMAIL_USE_TLS = True
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -246,7 +246,7 @@ INSTALLED_APPS = (
     "zone",
     "advanced",
     "south",
-    # "accounts",
+    "accounts",
 )
 
 # List of processors used by RequestContext to populate the context.

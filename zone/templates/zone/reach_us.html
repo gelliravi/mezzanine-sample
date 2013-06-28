@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+
+{% block navbottom %}
+<div class="navbar-bottom">
+	<div class="bpad40 ">   
+	    <a href="/">Home</a> <span class="divider">/</span>
+	    Reach Us
+    </div>
+</div>
+
+{% endblock %}
+{% block container %}
+<div class="container">
+<div class="row">
+  <div class="span30">
+  	<h4>GyaanZone<h4><br>
+  		Address Line 1<br>
+  		Address Line 2<br>
+  		Address Line 3<br>
+  		City<br>
+  		State<br>
+  		Pin: XXXXXX<br>
+  		Ph: XXX-XXX-XXXX<br><br>
+
+  	
+
+  		<a href="#"><img width="32" height="32" alt="rss" src="{{MEDIA_URL}}/rss.png"></img></a>&nbsp
+  		<a href="#"><img width="32" height="32" alt="rss" src="{{MEDIA_URL}}/facebook.png"></img></a>&nbsp 
+  		<a href="#"><img width="32" height="32" alt="rss" src="{{MEDIA_URL}}/youtube.png"></img></a> &nbsp
+  		<a href="#"><img width="32" height="32" alt="rss" src="{{MEDIA_URL}}/gplus.png"></img></a>&nbsp
+
+
+  	</div>
+
+
+
+  <div class="span60">
+
+  	<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Mumbai,+Maharashtra,+India&amp;aq=0&amp;oq=mumba&amp;sll=37.0625,-95.677068&amp;sspn=39.916234,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Mumbai,+Maharashtra,+India&amp;ll=19.075984,72.877656&amp;spn=0.373018,0.676346&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Mumbai,+Maharashtra,+India&amp;aq=0&amp;oq=mumba&amp;sll=37.0625,-95.677068&amp;sspn=39.916234,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Mumbai,+Maharashtra,+India&amp;ll=19.075984,72.877656&amp;spn=0.373018,0.676346&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">View Larger Map</a></small>	
+  	
+  </div>
+</div>
+</div>
+  
+{% endblock %}

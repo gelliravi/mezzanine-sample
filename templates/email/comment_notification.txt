@@ -1,7 +1,12 @@
 {% extends "email/base.txt" %}
 {% load i18n %}
 
-{% block main %}
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+{%endblock%}
+
+{% block container %}
 A new comment has been posted on {{ obj }} [http://{{ request.get_host }}{{ comment_url }}]
 
 {% blocktrans with submit_date=comment.submit_date user_name=comment.user_name %}

@@ -14,10 +14,17 @@ def zone(request):
     	{ },
         context_instance=RequestContext(request))
 
+
+def reach_us(request):    
+    return render_to_response('zone/reach_us.html', 
+    	{ },
+        context_instance=RequestContext(request))
+
 def main(request):    
     return render_to_response('zone/main.html', 
     	{ },
         context_instance=RequestContext(request))
+
 @csrf_exempt
 def contactview(request):
 		subject = request.POST.get('topic', '')

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block fulltitle %}Contact me!{% block title %}{% endblock %}{% endblock %}
+
+{% block header %}
+<h3> header of course</h3>
+{% endblock %}
+
+{% block extrahead %}
+{% endblock %}
+
+{% block container %}
+<!-- <div class="container">
+  <div class="row">
+    <div class="span7 middle">
+      <p>Fill in the form below to get in touch with us</p>
+      <form method="post">
+        <input type="hidden" value="http://127.0.0.1:8001/contact/" name="referrer"></input>
+        <input type="hidden" value="xsjrUcwiW6MFuwFaPzDycczyJ8tO82UO" name="csrfmiddlewaretoken">
+      </input>
+      <div class="control-group input_id_field_1 charfield">
+        <label class="control-label" for="id_field_1">Name</label>
+        <div class="controls">
+          <input id="id_field_1" class="input-xlarge" type="text" name="field_1" maxlength="2000"></input>
+          <span class="help-inline">required</span>
+        </div>
+      </div>
+      <div class="control-group input_id_field_2 emailfield">
+        <label class="control-label" for="id_field_2">Email</label>
+        <div class="controls">
+          <input id="id_field_2" class="input-xlarge" type="text" name="field_2" maxlength="2000"></input>
+          <span class="help-inline">required</span>
+        </div>
+      </div>
+      <div class="control-group input_id_field_3 choicefield">
+        <label class="control-label" for="id_field_3">Subject</label>
+        <div class="controls">
+          <select id="id_field_3" name="field_3">
+            <option value="Billing">Billing</option>
+            <option value="Sales">Sales</option>
+            <option value="Support">Support</option>
+          </select>
+          <span class="help-inline">required</span>
+        </div>
+      </div>
+      <div class="control-group input_id_field_4 charfield">
+        <label class="control-label" for="id_field_4">Message</label>
+        <div class="controls">
+          <textarea id="id_field_4" class="input-xlarge" rows="10" name="field_4" cols="40" style="width: 498px; height: 226px;"></textarea>
+          <span class="help-inline">required</span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <input class="btn btn-primary btn-large" type="submit" value="Submit"></input>
+      </div>
+    </form>
+  </div>
+</div>
+</div> -->
+        <div id="contact_wrap">
+
+        <div id="contact" class="clearfix">
+            <div id="c_form">
+                <br /><br />
+                <form name="theform" action="." method="post" id="theform">
+                    <div id="name_email">
+
+                        <label id="id_name">Name:</label>
+                        <input type="text" name="name" value="" id="name" />
+                        <label id="id_email">Email:</label>
+                        <input type="text" name="email" value="" id="email" />
+                    </div>
+                    <div id="message">
+                        <label id="id_message">Message:</label>
+                        <textarea name="message" rows="8" cols="37"></textarea>
+
+                    </div>
+                    <div id="submit">
+                        <input class="btn"type="button" onclick="YY_checkform('theform','name','#q','0','Field \'name\' is empty.','Email','#S','2','Field \'Email\' appears not to be valid.','message','2','1','Field \'message\' is empty.');return document.MM_returnValue" />
+                    </div> <!-- end submit -->
+                    <input class="hidden" type="hidden" name="topic" value="Home : Contact Form Submission" id="subject" />
+                </form>
+
+           </div>
+      </div>
+
+   </div> 
+{% endblock %}
+

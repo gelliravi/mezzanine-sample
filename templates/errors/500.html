@@ -2,10 +2,15 @@
 
 {% load i18n %}
 
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+{%endblock%}
+
 {% block title %}
 {% trans "Error" %}
 {% endblock %}
 
-{% block main %}
+{% block container %}
 {% trans "Sorry, an error occurred." %}
 {% endblock %}

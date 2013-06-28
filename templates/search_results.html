@@ -13,7 +13,16 @@
 <li class="active">{% trans "Search Results" %}</li>
 {% endblock %}
 
-{% block main %}
+{% block navbottom %}
+<div class="navbar-bottom">
+	<div class="bpad40 ">   
+	    <a href="/">Home</a> <span class="divider">/</span>
+	    Search Results
+    </div>
+</div>
+{% endblock %}
+
+{% block container %}
 
 <p>
 {% if results.paginator.count == 0 %}

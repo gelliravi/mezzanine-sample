@@ -2,10 +2,15 @@
 
 {% load i18n %}
 
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+{%endblock%}
+
 {% block title %}
 {% trans "Page not found" %}
 {% endblock %}
 
-{% block main %}
+{% block container %}
 {% trans "The page you requested does not exist." %}
 {% endblock %}

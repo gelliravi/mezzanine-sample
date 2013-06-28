@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Create an account{% endblock %}
+
+{% block navbottom %}
+<div class="navbar-bottom">
+	<div class="bpad40 ">   
+	    <a href="/">Home</a> <span class="divider">/</span>
+	    Login
+    </div>
+</div>
+
+{% endblock %}
+
+{% block container %}
+
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+
+<form action="." method="POST">
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+
+
+
+  {<!-- % if form.errors %}
+    <p class="error"> Sorry Invalid uname paswd</p>
+  {% endif %}
+<form action="accounts/auth"method="POST">
+  {% csrf token %}
+  <label for="username">Username</label>
+  <input type="text" name="username" value="" id="username" />
+  <label for="password">Password</label>
+  <input type="password" name="password" value="" id="password">
+  <input type="submit" value="login" />
+</form> -->
+{% endblock %}

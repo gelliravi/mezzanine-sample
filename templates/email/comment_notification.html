@@ -1,7 +1,7 @@
 {% extends "email/base.html" %}
 {% load i18n %}
 
-{% block main %}
+{% block container %}
 <p>
     {% trans "A new comment has been posted on" %}
     <a href="http://{{ request.get_host }}{{ comment_url }}">{{ obj }}</a>

@@ -1,6 +1,11 @@
 {% extends "email/base.html" %}
 
-{% block main %}
+{% block navbottom %}
+<div class="navbar-bottom">
+</div>
+{%endblock%}
+
+{% block container %}
 {% if message %}<p>{{ message }}</p>{% endif %}
 <table border="0">
 {% for field, value in fields %}
